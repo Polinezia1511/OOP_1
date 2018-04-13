@@ -21,6 +21,8 @@ namespace PAinT
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            MyCircle myCircle = new MyCircle(50, 95, 100);
+            list.Add(myCircle);
             MyLine myLine = new MyLine(10, 10, 300, 200);
             list.Add(myLine);
             foreach (Figure figure in list)
