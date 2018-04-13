@@ -12,9 +12,21 @@ namespace PAinT
 {
     public partial class Form1 : Form
     {
+        List<Figure> list = new List<Figure>();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            MyLine myLine = new MyLine(10, 10, 300, 200);
+            list.Add(myLine);
+            foreach (Figure figure in list)
+            {
+                figure.Draw(e);
+            } 
         }
     }
 }
