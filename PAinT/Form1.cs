@@ -21,6 +21,8 @@ namespace PAinT
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            Rectangle myRec = new Rectangle(100, 120, 180, 200);
+            list.Add(myRec);
             MyCircle myCircle = new MyCircle(50, 95, 100);
             list.Add(myCircle);
             MyLine myLine = new MyLine(10, 10, 300, 200);
