@@ -21,6 +21,8 @@ namespace PAinT
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            MyPie myPie = new MyPie(240, 50, 340, 100, 30, 100);
+            list.Add(myPie);
             MyEllipse myEllipse = new MyEllipse(250, 180, 360, 250);
             list.Add(myEllipse);
             Rectangle myRec = new Rectangle(100, 120, 180, 200);
